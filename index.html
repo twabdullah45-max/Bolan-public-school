@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolan Public School - Sibi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header & Navigation Bar -->
+    <header>
+        <div class="logo">
+            <h1><i class="fa-solid fa-graduation-cap"></i> Bolan Public School</h1>
+        </div>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#notice">Notice Board</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#principal">Principal</a></li>
+                <li><a href="#classes">Classes</a></li>
+                <li><a href="#fees" id="fee-nav-btn">Fee Structure</a></li>
+                <li><a href="#faculty">Faculty</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Notice Board / Scrolling Ticker -->
+    <div id="notice" class="notice-board">
+        <div class="notice-title"><i class="fa-solid fa-bullhorn"></i> Latest News:</div>
+        <div class="notice-ticker">
+            <p>📢 Admissions Open for the New Academic Session 2026-2027 at Bolan Public School, Sibi! | Last date for form submission is approaching soon.</p>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Bolan Public School, Sibi</h2>
+            <p>Empowering students with quality education, moral values, and a bright future.</p>
+            <a href="#contact" class="btn">Admissions Open</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Our School</h2>
+            <p>Bolan Public School, located in Muhalla Gareeb near TV Booster Road, Sibi, provides a nurturing environment where students excel academically, creatively, and socially. Our experienced faculty and modern facilities ensure holistic development for every child.</p>
+        </div>
+    </section>
+
+    <!-- Principal's Message Section -->
+    <section id="principal" class="principal">
+        <div class="container">
+            <h2>Principal's Message</h2>
+            <div class="principal-text">
+                <p><em>"Education is not just about preparing for exams, but for life itself. At Bolan Public School, we strive to build character, instill discipline, and foster critical thinking in every student so they can serve society with pride and dedication."</em></p>
+                <h4>— Principal, Bolan Public School</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Classes / Grades Section -->
+    <section id="classes" class="classes">
+        <h2>Our Classes & Programs</h2>
+        <div class="class-grid">
+            <div class="card">
+                <i class="fa-solid fa-child"></i>
+                <h3>Playgroup & Nursery</h3>
+                <p>Early childhood learning through fun activities, basic alphabets, and numbers.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-book-open"></i>
+                <h3>Primary Section (1 to 5)</h3>
+                <p>Building strong foundations in English, Urdu, Mathematics, and Science.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h3>Middle & High (6 to 10)</h3>
+                <p>Advanced coaching aligned with board standards, computer literacy, and board exam preparation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fee Structure Section (Hidden by default) -->
+    <section id="fees" class="fees hidden-fees">
+        <div class="container">
+            <h2>Fee Structure</h2>
+            <p>Affordable education with concession options for deserving students.</p>
+            <table class="fee-table">
+                <tr>
+                    <th>Class Level</th>
+                    <th>Admission Fee</th>
+                    <th>Monthly Tuition Fee</th>
+                </tr>
+                <tr>
+                    <td>Playgroup & Nursery</td>
+                    <td>PKR 1,500</td>
+                    <td>PKR 800 / month</td>
+                </tr>
+                <tr>
+                    <td>Primary (Class 1 - 5)</td>
+                    <td>PKR 2,000</td>
+                    <td>PKR 1,200 / month</td>
+                </tr>
+                <tr>
+                    <td>Middle & High (Class 6 - 10)</td>
+                    <td>PKR 3,000</td>
+                    <td>PKR 1,800 / month</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- Faculty / Teachers Section -->
+    <section id="faculty" class="faculty">
+        <h2>Our Qualified Faculty</h2>
+        <div class="faculty-grid">
+            <div class="faculty-card">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80" alt="Teacher">
+                <h3>Sir Ahmed Khan</h3>
+                <p>Vice Principal & Senior Science Teacher</p>
+            </div>
+            <div class="faculty-card">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80" alt="Teacher">
+                <h3>Mr. Bilal Baloch</h3>
+                <p>Mathematics & Computer Instructor</p>
+            </div>
+            <div class="faculty-card">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=300&q=80" alt="Teacher">
+                <h3>Madam Fatima</h3>
+                <p>Primary Section Incharge</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section id="gallery" class="gallery">
+        <h2>School Photo Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=400&q=80" alt="Classroom">
+                <p>Modern Classrooms</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=400&q=80" alt="School Building">
+                <p>Campus Building</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=400&q=80" alt="Students Learning">
+                <p>Library & Study Time</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parent Reviews / Testimonials -->
+    <section id="reviews" class="reviews">
+        <h2>What Parents Say</h2>
+        <div class="review-grid">
+            <div class="review-card">
+                <p>"Bolan Public School has brought a tremendous positive change in my child's education and discipline. Highly recommended in Sibi!"</p>
+                <h4>— Muhammad Ali (Parent)</h4>
+            </div>
+            <div class="review-card">
+                <p>"The teachers are very cooperative and hardworking. The fees are also very affordable for local families."</p>
+                <h4>— Ayesha Bibi (Parent)</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features / Facilities Section -->
+    <section id="features" class="features">
+        <h2>Our Facilities</h2>
+        <div class="feature-grid">
+            <div class="card">
+                <i class="fa-solid fa-book"></i>
+                <h3>Modern Library</h3>
+                <p>A vast collection of textbooks, storybooks, and study guides.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-computer"></i>
+                <h3>Computer Lab</h3>
+                <p>Basic computer training and digital learning resources for students.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-futbol"></i>
+                <h3>Sports Ground</h3>
+                <p>Spacious open areas for physical activities and sports.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <div class="info">
+                <p><i class="fa-solid fa-location-dot"></i> Muhalla Gareeb, near TV Booster Road, Sibi</p>
+                <p><i class="fa-solid fa-phone"></i> +92 300 1234567</p>
+                <p><i class="fa-solid fa-envelope"></i> info@bolanpublicschool.com</p>
+            </div>
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="4" placeholder="Your Message / Admission Query" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Bolan Public School, Sibi. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

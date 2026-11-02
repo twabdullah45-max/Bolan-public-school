@@ -1,0 +1,344 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #1b4931;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header .logo h1 {
+    font-size: 22px;
+    color: #ffc107;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffc107;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Notice Board Banner */
+.notice-board {
+    background-color: #ffc107;
+    color: #1b4931;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.notice-title {
+    background-color: #1b4931;
+    color: #ffc107;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-right: 15px;
+    white-space: nowrap;
+}
+
+.notice-ticker p {
+    white-space: nowrap;
+    overflow: hidden;
+    animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(39, 122, 57, 0.85), rgba(27, 73, 49, 0.85)), url('https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.hero-content h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    background-color: #ffc107;
+    color: #1b4931;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #e0a800;
+    color: #fff;
+}
+
+/* General Section Headings */
+section {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 32px;
+    color: #1b4931;
+    margin-bottom: 20px;
+}
+
+/* About & Principal */
+.about, .principal, .classes, .fees, .faculty, .gallery, .reviews, .features, .contact {
+    background: #ffffff;
+}
+
+.principal, .fees, .gallery {
+    background-color: #eef2f0;
+}
+
+.about .container, .principal-text {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.principal-text h4 {
+    margin-top: 15px;
+    color: #1b4931;
+}
+
+/* Grids (Classes, Features, Faculty, Gallery, Reviews) */
+.class-grid, .feature-grid, .faculty-grid, .gallery-grid, .review-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.card, .faculty-card, .gallery-item, .review-card {
+    background: #fdfdfd;
+    padding: 25px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    border-top: 4px solid #1b4931;
+    text-align: center;
+}
+
+.card i {
+    font-size: 40px;
+    color: #1b4931;
+    margin-bottom: 15px;
+}
+
+.card h3, .faculty-card h3 {
+    margin-bottom: 10px;
+    color: #1b4931;
+}
+
+/* Faculty Cards Styling */
+.faculty-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #1b4931;
+}
+
+/* Gallery Images Styling */
+.gallery-item {
+    padding: 10px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.gallery-item p {
+    font-weight: bold;
+    color: #1b4931;
+}
+
+/* Review Cards Styling */
+.review-card {
+    border-top: 4px solid #ffc107;
+    font-style: italic;
+    color: #444;
+}
+
+.review-card h4 {
+    margin-top: 15px;
+    font-style: normal;
+    color: #1b4931;
+}
+
+/* Fee Structure Section & Toggle Class */
+.hidden-fees {
+    display: none;
+}
+
+.fee-table {
+    width: 100%;
+    max-width: 700px;
+    margin: 30px auto 0 auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.fee-table th, .fee-table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.fee-table th {
+    background-color: #1b4931;
+    color: white;
+}
+
+/* Contact Section */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    text-align: left;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info p {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.info i {
+    color: #1b4931;
+    margin-right: 10px;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+#contact-form input, #contact-form textarea {
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+/* Footer */
+footer {
+    background-color: #1b4931;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* Responsive Design for Mobile */
+@media(max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #1b4931;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 25px;
+    }
+
+    .hero-content h2 {
+        font-size: 28px;
+    }
+}
